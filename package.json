@@ -1,0 +1,42 @@
+{
+  "name": "fractal_tree",
+  "version": "1.0.0",
+  "description": "This is a simple example for creating a fractal tree rendering with three.js",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "build": "npm run lint && webpack --env production",
+    "dev": "webpack-dev-server --env development",
+    "lint": "./node_modules/.bin/eslint public/js/"
+  }, 
+  "author": "jlopez90@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.1.0",
+    "path": "^0.12.7",
+    "style-loader": "^0.20.3",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.2.0",
+    "webpack-cli": "^2.0.13",
+    "webpack-dev-server": "^3.1.1",
+    "webpack-merge": "^4.1.2"
+  },
+  "dependencies": {
+    "three": "^0.91.0"
+  }
+}
